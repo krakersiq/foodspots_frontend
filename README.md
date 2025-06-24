@@ -24,4 +24,4 @@ Verwendete KI-Werkzeuge:
     # 
     # 
 
-   Favicon: https://boxicons.com/icons/tv?s=rounded&w=thin&f=false&q=tv
+   Favicon: https://favicon.io/emoji-favicons/popcorn/#google_vignette

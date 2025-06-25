@@ -8,7 +8,8 @@ import { Startseite } from './startseite/startseite';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './app.html',
-  styleUrls: ['./app.css']
+  styleUrls: ['./app.css'],
 })
 export class App {
+  protected title = 'Die besten Food-Spots der Welt';
 }

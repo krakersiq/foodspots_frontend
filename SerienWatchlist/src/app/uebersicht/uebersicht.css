@@ -1,9 +1,4 @@
-body {
-  background-color: #fceedd;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-}
+
 
 table {
   margin: 100px auto;
@@ -22,7 +17,7 @@ td {
   text-align: left;
 }
 
-nav {
+.uebersicht-nav {
   display: inline-flex;
   position: relative;
   overflow: hidden;

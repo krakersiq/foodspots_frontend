@@ -1,23 +1,33 @@
-<nav class="'uebersicht-nav">
-  <ol>
-    <li><a href="../Startseite/startseite.html">Zurück zur Startseite</a></li>
-    <li><a href="../Uebersicht/uebersicht.html">Übersicht</a></li>
-    <li><a href="../Registrierung/registrierung.html">Anmelden</a></li>
-  </ol>
-</nav>
+<div class="conatiner m-5">
+  <h1>Alle Foodspots</h1>
 
-<table id="watchlist-tabelle">
-  <thead>
-    <tr>
-      <th>Serienname</th>
-      <th>Staffeln</th>
-      <th>Episoden</th>
-      <th>Streamingplatform</th>
-      <th>Genre</th>
-      <th>Bewertung</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<script src="../Uebersicht/uebersicht.js"></script>
+  <table class="table table-striped table-responsive mt-5">
+    <caption>
+      Alle Foodspots
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Stadt</th>
+        <th scope="col">Küche</th>
+        <th scope="col">Geschmack</th>
+        <th scope="col">Preis</th>
+        <th scope="col">Ambiente</th>
+        <th scope="col">Kommentar</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (foodspot of foodspots; track $index; let i = $index) {
+      <tr>
+        <td>{{ foodspot.name }}</td>
+        <td>{{ foodspot.stadt }}</td>
+        <td>{{ foodspot.kueche }}</td>
+        <td>{{ foodspot.bewertung_geschmack}}</td>
+        <td>{{ foodspot.bewertung_preis }}</td>
+        <td>{{ foodspot.bewertung_ambiente }}</td>
+        <td>{{ foodspot.kommentar }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

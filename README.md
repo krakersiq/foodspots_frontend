@@ -20,6 +20,17 @@ Aufbau
 - Serien Übersicht
 - 
 
+Fabrpalette:
+#F5727A
+#D95057
+#C4363D
+#A92227
+
+#FCEEDD HINTERGRUND
+#E9D7C3
+#C9B39D
+#AA9078
+
 Verwendete KI-Werkzeuge:
     # 
     # 

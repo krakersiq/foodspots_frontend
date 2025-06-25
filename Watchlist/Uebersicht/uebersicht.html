@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Übersicht</title>
     <link rel="stylesheet" href="uebersicht.css">
-    <link rel="icon" href="../Images/popcorn-favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="../icons/popcorn-favicon-16x16.png" type="image/png" sizes="16x16">
 </head>
 
 <body>
 
-    <table>
+    <nav>
+        <ol>
+            <li><a href="../Startseite/startseite.html">Zurück zur Startseite</a></li>
+            <li><a href="../Serien/serien.html">Übersicht</a></li>
+            <li><a href="../Filme/filme.html">Anmelden</a></li>
+        </ol>
+    </nav>
+
+    <table id="watchlist-tabelle">
         <thead>
             <tr>
                 <th>Serienname</th>
@@ -23,39 +31,19 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Breaking Bad</td>
-                <td>Drama, Crime</td>
-                <td>9.5</td>
-                <td>5. Staffel, Folge 14</td>
-                <td>Abgeschlossen</td>
-            </tr>
-            <tr>
-                <td>Stranger Things</td>
-                <td>Sci-Fi, Horror</td>
-                <td>8.7</td>
-                <td>4. Staffel, Folge 8</td>
-                <td>Laufend</td>
-            </tr>
-            <tr>
-                <td>The Crown</td>
-                <td>Drama, History</td>
-                <td>8.6</td>
-                <td>4. Staffel, Folge 10</td>
-                <td>Laufend</td>
-            </tr>
+            
         </tbody>
     </table>
 
-<script src="uebersicht.js">
-</script>
+    <script src="../Uebersicht/uebersicht.js">
+    </script>
 
 </body>
 
 <footer>
-    
-        <p>© 2025 Serien Watchlist</p>
-   
+
+    <p>© 2025 Serien Watchlist</p>
+
 </footer>
 
 

@@ -36,7 +36,7 @@ td {
 } */
 
 footer {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(75, 187, 231));
+  background: linear-gradient(to right, #fa9740, #c4363d);
   height: 100px;
   width: 100%;
   position: fixed;

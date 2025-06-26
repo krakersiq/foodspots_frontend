@@ -33,4 +33,4 @@ Verwendete KI-Werkzeuge:
     #  Chat GBT 
     # 
 
-   Favicon: https://favicon.io/emoji-favicons/popcorn/#google_vignette
+   Favicon: https://favicon.io/emoji-favicons/fork-and-knife/

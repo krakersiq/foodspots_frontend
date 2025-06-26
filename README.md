@@ -1,5 +1,5 @@
 *Semesteraufgabe Webanwendung*
-Foodspots – 
+Foodspots – Die besten Foodspots der Welt
 
 Verwalte deine Lieblings-Foodspots auf einen Blick.
 Mit dieser Webanwendung können Benutzerinnen neue Foodspots hinzufügen, bestehende bearbeiten oder entfernen. 
@@ -7,7 +7,7 @@ Behalte jederzeit den Überblick über deine persönliche Sammlung kulinarischer
 
 Funktionen:
 - Foodspot hinzufügen, bearbeiten und löschen
-- Foodspots verwalten 
+- Foodspots verwalten, filtern
 - Lieblinge markieren???
 - Filtern nach Bewertung???
 
@@ -19,18 +19,13 @@ Formular #Foodspot hinzufügen etc.
 -  
 
 Farbpalette:
-#F5727A
-#D95057
-#C4363D
-#A92227
+#FCEEDD - Hintergrundfarbe
+#fa9740, #c4363d - Header, Footer
 
-#FCEEDD Hintergrundfarbe
-#E9D7C3
-#C9B39D
-#AA9078
+
 
 Verwendete KI-Werkzeuge:
-    #  Chat GBT 
-    # 
+    # Chat GBT 
+    # chatki.HTW
 
    Favicon: https://favicon.io/emoji-favicons/fork-and-knife/

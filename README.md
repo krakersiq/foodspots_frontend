@@ -1,39 +1,36 @@
 *Semesteraufgabe Webanwendung*
-SerienTracker – persönliche Watchlist
+Foodspots – 
 
-Eine Webanwendung zur Übersicht und Verwaltung von Lieblingsserien.
-Benutzerinnen können nach Serien suchen, neue Serien, Staffeln, Episoden hinzufügen, bearbeiten/bewerten oder aus der Watchlist löschen.
+Verwalte deine Lieblings-Foodspots auf einen Blick.
+Mit dieser Webanwendung können Benutzerinnen neue Foodspots hinzufügen, bestehende bearbeiten oder entfernen. 
+Behalte jederzeit den Überblick über deine persönliche Sammlung kulinarischer Highlights.
 
-Verwalte, welche Serien du schaust, bewerte einzelne Episoden und sieh deinen Fortschritt auf einen Blick.
+Funktionen:
+- Foodspot hinzufügen, bearbeiten und löschen
+- Foodspots verwalten 
+- Lieblinge markieren???
+- Filtern nach Bewertung???
 
-Funktionen
-- Serien hinzufügen, bearbeiten und löschen
-- Staffeln & Episoden verwalten 
-- Gesehene Episoden markieren??
-- Serien und Folgen bewerten (nach Sternen bewerten)
-- eventuell Filter nach Plattform, Genre oder Fortschritt?
-- Webinterface listenartig aufgebaut? mit Bildern?
-
-Aufbau
+Aufbau:
 - Startseite
+Übersicht (in Tabelle)
 - (optional) Registrierung
-- Serien Übersicht
-- 
+Formular #Foodspot hinzufügen etc.
+-  
 
-Fabrpalette:
-
+Farbpalette:
 #F5727A
 #D95057
 #C4363D
 #A92227
 
-#FCEEDD HINTERGRUND
+#FCEEDD Hintergrundfarbe
 #E9D7C3
 #C9B39D
 #AA9078
 
 Verwendete KI-Werkzeuge:
-    # 
+    #  Chat GBT 
     # 
 
    Favicon: https://favicon.io/emoji-favicons/popcorn/#google_vignette

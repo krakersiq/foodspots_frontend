@@ -8,7 +8,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './startseite.css'
 })
 export class Startseite {
-  protected title = 'Die besten Food-Spots der Welt';
+  protected title = 'Die besten Foodspots der Welt';
 
   constructor(private router: Router) {}
 

@@ -13,5 +13,5 @@ import { Formular } from './formular/formular';
   styleUrls: ['./app.css'],
 })
 export class App {
-  protected title = 'Die besten Food-Spots der Welt';
+  protected title = 'Die besten Foodspots der Welt';
 }

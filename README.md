@@ -26,6 +26,7 @@ Farbpalette:
 
 Verwendete KI-Werkzeuge:
     # Chat GBT 
-    # chatki.HTW
+    # Copilot
+
 
    Favicon: https://favicon.io/emoji-favicons/fork-and-knife/

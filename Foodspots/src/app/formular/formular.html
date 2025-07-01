@@ -1,15 +1,23 @@
-<div class="form-container">
-  
-    <p>Füge ein neuen Foodspot hinzu!</p>
-  
-  <form (ngSubmit)="onSubmit()">
+<h3 class="form-headline">Füge einen neuen Foodspot hinzu!</h3>
 
-    <div class="box-container">
-      
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input type="text" id="stadt" name="stadt" placeholder="Stadt" required>
+      <input type="text" id="kueche" name="kueche" placeholder="Küche" required>
     </div>
 
-    <div class="form">
-      <label for="name">Name:</label>
-      <input id="name" formControlName="name" type="text" required>
-  
+    <div class="form-group">
+      <input type="text" id="geschmack" name="geschmack" placeholder="Geschmack" required>
+      <input type="text" id="preis" name="preis" placeholder="Preis" required>
+      <input type="text" id="ambiente" name="ambiente" placeholder="Ambiente" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="kommentar" name="kommentar" placeholder="Kommentar" required>
+    </div>
+
+    <button type="submit">Absenden</button>
+  </form>
 </div>

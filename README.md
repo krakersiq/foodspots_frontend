@@ -16,7 +16,6 @@ Aufbau:
 Übersicht (in Tabelle)
 - (optional) Registrierung
 Formular #Foodspot hinzufügen etc.
--  
 
 Farbpalette:
 #FCEEDD - Hintergrundfarbe

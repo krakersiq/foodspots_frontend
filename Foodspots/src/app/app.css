@@ -13,6 +13,7 @@ header {
   top: 0;
   margin-bottom: 10px;
   text-align: center;
+  overflow-x: auto;
 }
 
 .header-container {
@@ -22,6 +23,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   white-space: nowrap; /* kein Zeilenumbruch */
+  overflow-y: auto;
   
 }
 

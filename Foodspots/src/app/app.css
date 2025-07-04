@@ -9,7 +9,8 @@ header {
   background: linear-gradient(to right, #fa9740, #c4363d);
   height: 100px;
   width: 100%;
-  position: fixed;
+  display: flex;
+  justify-content: flex-start;
   top: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -102,17 +103,21 @@ button:active {
 p {
   color: #0a0a0a;
   text-align: center;
+  margin-left: 300px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
-  top: 75px;
-  position: relative;
+  top: 20px;
+  display: flex;
 }
 
 footer {
   background: linear-gradient(to right, #fa9740, #c4363d);
   height: 90px;
   width: 100%;
-  position: fixed;
+  color: black;
   bottom: 0;
   left: 0;
+  position: fixed;
+  align-items: center;
+  justify-content:center ;
 }

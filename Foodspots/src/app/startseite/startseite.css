@@ -8,11 +8,10 @@ section {
   margin: 0 auto;
   width: 50%;
   padding: 140px 0 10px;
+  min-height: 150vh;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 span {
   color: #0a0a0a;
@@ -33,6 +32,9 @@ button {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 325px;
 }
 
 button:hover {
@@ -49,14 +51,16 @@ button:active {
   transform: scale(0.98);
 }
 
-p {
+/* p {
   color: #0a0a0a;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
-  top: 75px;
-  position: relative;
-}
+  top: 200px;
+  margin-left: 321px;
+  justify-content: center;
+  display: block
+} */
 
 footer {
   background-color: #f5727a;

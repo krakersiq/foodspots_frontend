@@ -1,20 +1,33 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Foodspot } from '../shared/foodspot';
+import { Backend } from '../shared/backend';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-formular',
-  /* imports: [], */
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './formular.html',
   styleUrl: './formular.css'
 })
-
 export class Formular {
-  constructor(private router: Router) {}
+  foodspot: Foodspot = {
+    name: '',
+    stadt: '',
+    kueche: '',
+    bewertung_geschmack: 0,
+    bewertung_preis: 0,
+    bewertung_ambiente: 0,
+    kommentar: ''
+  };
+
+  constructor(private router: Router, private backend: Backend) {}
 
   onSubmit() {
-    console.log('Formular wird angezeigt');
-    this.router.navigate(['/formular']);
+    this.backend.create(this.foodspot).then(() => {
+      console.log('Neuer Foodspot wurde hinzugefügt');
+      this.router.navigate(['/uebersicht']);
+    });
   }
-
 }
-

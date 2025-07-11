@@ -1,5 +1,3 @@
-
-
 h3{
   color: #0a0a0a;
   text-align: center;
@@ -45,10 +43,25 @@ input {
 }
 
 button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #f26522;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #f5727a;
+  color: #ffffff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #a92227;
+  box-shadow: 0 0 20px #a92227;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #e4c8f1;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }

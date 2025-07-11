@@ -25,7 +25,6 @@ header {
   justify-content: space-between;
   white-space: nowrap; /* kein Zeilenumbruch */
   overflow-y: auto;
-  
 }
 
 .nav-links {
@@ -61,8 +60,8 @@ h1 {
 
 section {
   margin: 0 auto;
-  width: 60%;
-  padding: 140px 0 10px;
+  width: 70%;
+  padding: 0px 20px 0px;
   min-height: 150vh;
 }
 
@@ -114,14 +113,14 @@ button:active {
 
 footer {
   background: linear-gradient(to right, #fa9740, #c4363d);
+  color: rgb(255, 255, 255);
   height: 90px;
   width: 100%;
-  color: rgb(255, 255, 255);
+  position: fixed;
   bottom: 0;
   left: 0;
-  position: fixed;
-  align-items: center;
-  justify-content:center;
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }

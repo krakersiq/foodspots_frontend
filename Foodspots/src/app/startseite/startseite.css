@@ -31,10 +31,8 @@ button {
   color: #ffffff;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 325px;
+  display: block;
+  margin: 20px auto;
 }
 
 button:hover {

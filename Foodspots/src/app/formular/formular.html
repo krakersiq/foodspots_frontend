@@ -3,19 +3,19 @@
 <div class="form-container">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <input type="text" id="name" name="name" placeholder="Name" required>
-      <input type="text" id="stadt" name="stadt" placeholder="Stadt" required>
-      <input type="text" id="kueche" name="kueche" placeholder="Küche" required>
+      <input type="text" id="name" name="name" [(ngModel)]="foodspot.name" placeholder="Name" required>
+      <input type="text" id="stadt" name="stadt" [(ngModel)]="foodspot.stadt" placeholder="Stadt" required>
+      <input type="text" id="kueche" name="kueche" [(ngModel)]="foodspot.kueche" placeholder="Küche" required>
     </div>
 
     <div class="form-group">
-      <input type="text" id="geschmack" name="geschmack" placeholder="Geschmack" required>
-      <input type="text" id="preis" name="preis" placeholder="Preis" required>
-      <input type="text" id="ambiente" name="ambiente" placeholder="Ambiente" required>
+      <input type="text" id="geschmack" name="geschmack" [(ngModel)]="foodspot.bewertung_geschmack" placeholder="Geschmack" required>
+      <input type="text" id="preis" name="preis" [(ngModel)]="foodspot.bewertung_preis" placeholder="Preis" required>
+      <input type="text" id="ambiente" name="ambiente" [(ngModel)]="foodspot.bewertung_ambiente" placeholder="Ambiente" required>
     </div>
 
     <div class="form-group">
-      <input type="text" id="kommentar" name="kommentar" placeholder="Kommentar" required>
+      <input type="text" id="kommentar" name="kommentar" [(ngModel)]="foodspot.kommentar" placeholder="Kommentar" required>
     </div>
 
     <button type="submit">Absenden</button>

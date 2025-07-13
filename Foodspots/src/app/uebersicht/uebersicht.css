@@ -73,3 +73,32 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.showDeleteModal {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 30%;
+}
+
+.modal-header {
+  border-bottom: 1px solid grey;
+  padding-left: 20px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  padding: 10px 0;
+  color: #333;
+  text-align: left;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

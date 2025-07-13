@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './formular.html',
-  styleUrl: './formular.css'
+  styleUrl: './formular.css',
 })
 export class Formular {
   foodspot: Foodspot = {
@@ -19,7 +19,7 @@ export class Formular {
     bewertung_geschmack: undefined,
     bewertung_preis: undefined,
     bewertung_ambiente: undefined,
-    kommentar: ''
+    kommentar: '',
   };
 
   constructor(private router: Router, private backend: Backend) {}

@@ -12,6 +12,7 @@ export class Uebersicht implements OnInit {
   private bs = inject(Backend);
   foodspots: Foodspot[] = [];
   foodspot!: Foodspot;
+  showDeleteModal: boolean = false;
 
   ngOnInit(): void {
     this.bs
@@ -22,15 +23,27 @@ export class Uebersicht implements OnInit {
       );
   }
 
-  onClick(foodspot: Foodspot) {
-    console.log('Foodspot wurde angeklickt: ', foodspot);
+  onClickDelete(foodspot: Foodspot) {
+    this.bs.getOne(String(foodspot._id))
+    .then(
+      response => {
+        this.foodspot = response;
+        this.showDeleteModal = true;
+      }
+    )
   }
 
-  deleteFoodspot(foodspot: Foodspot) {
-    const id = foodspot._id;
+  cancelDelete() {
+    this.showDeleteModal = false;
+  }
+ 
+  deleteFoodspot() {
+    const id = this.foodspot._id;
+    console.log('Lösche Foodspot mit ID: ', id);
     this.bs.deleteOne(String(id)).then(() => {
       console.log('Foodspot wurde gelöscht');
       this.bs.getAll().then((response) => (this.foodspots = response));
+      this.showDeleteModal = false;
     });
   }
 }

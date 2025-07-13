@@ -32,12 +32,37 @@
         <td>{{ foodspot.kommentar }}</td>
         <td>
           <div class="button-container">
-            <button>Bearbeiten</button>
-            <button (click)="deleteFoodspot(foodspot)">Löschen</button>
+            <button><span class="bi bi-pencil"></span></button>
+            <button (click)="onClickDelete(foodspot)">
+              <span class="bi bi-trash"></span>
+            </button>
           </div>
         </td>
       </tr>
       }
     </tbody>
   </table>
+  @if(showDeleteModal) {
+  <div class="showDeleteModal" tabindex="-1">
+    <div class="modal-header">
+      <h3 class="modal-title">Löschen bestätigen</h3>
+    </div>
+    <div class="modal-body">
+      <p>Wollen Sie {{ this.foodspot.name }} wirklich löschen?</p>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+        (click)="cancelDelete()"
+      >
+        Abbrechen
+      </button>
+      <button type="button" class="btn btn-danger" (click)="deleteFoodspot()">
+        Löschen
+      </button>
+    </div>
+  </div>
+  }
 </div>

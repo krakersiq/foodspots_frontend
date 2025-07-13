@@ -16,6 +16,13 @@ export class Backend {
     return foodspots;
   }
 
+  async getOne(id: string): Promise<Foodspot> {
+    let response = await fetch(this.apiURL + '/foodspots/' + id);
+    let foodspot = await response.json();
+    console.log('foodspot in service (getOne) : ', foodspot);
+    return foodspot;
+  }
+
   async create(foodspot: Foodspot): Promise<Foodspot> {
     const response = await fetch(this.apiURL + '/foodspots', {
       method: 'POST',
@@ -27,6 +34,22 @@ export class Backend {
     const newFoodspot = await response.json();
     console.log('Neuer Foodspot in service (create): ', newFoodspot);
     return newFoodspot;
+  }
+
+  async update(id: string, foodspot: Foodspot): Promise<Foodspot> {
+    const response = await fetch(this.apiURL + '/foodspots/' + id, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(foodspot),
+    });
+    const updatedFoodspot = await response.json();
+    console.log(
+      'Aktualisierter Foodspot in service (update): ',
+      updatedFoodspot
+    );
+    return updatedFoodspot;
   }
 
   async deleteOne(id: string): Promise<{ message: string }> {

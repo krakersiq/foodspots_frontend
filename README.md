@@ -15,6 +15,7 @@ Aufbau nach Navigationsbar:
 Home - Startseite
 Alle Foodspots - Übersicht aller beriets gespiecherten Foodspots in einer Tabelle
 Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
+![alt text](image.png)
 Login - (optional) Registrierung
 
 

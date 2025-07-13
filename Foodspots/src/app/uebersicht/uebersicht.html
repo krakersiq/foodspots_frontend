@@ -31,14 +31,12 @@
         <td>{{ foodspot.bewertung_ambiente }}</td>
         <td>{{ foodspot.kommentar }}</td>
         <td>
-          <div>
+          <div class="button-container">
             <button>Bearbeiten</button>
-            <br>
-            <button>Löschen</button>
+            <button (click)="deleteFoodspot(foodspot)">Löschen</button>
           </div>
         </td>
       </tr>
-
       }
     </tbody>
   </table>

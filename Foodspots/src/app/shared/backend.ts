@@ -20,12 +20,21 @@ export class Backend {
     const response = await fetch(this.apiURL + '/foodspots', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(foodspot)
+      body: JSON.stringify(foodspot),
     });
     const newFoodspot = await response.json();
     console.log('Neuer Foodspot in service (create): ', newFoodspot);
     return newFoodspot;
+  }
+
+  async deleteOne(id: string): Promise<{ message: string }> {
+    let response = await fetch(this.apiURL + '/foodspots/' + id, {
+      method: 'DELETE',
+    });
+    let message = await response.json();
+    console.log('Antwort vom Backend (deleteOne): ', message);
+    return message;
   }
 }

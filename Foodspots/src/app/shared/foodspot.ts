@@ -1,9 +1,10 @@
 export interface Foodspot {
+  _id?: String;
   name: String;
   stadt: String;
   kueche: String;
-  bewertung_geschmack: Number;
-  bewertung_preis: Number;
-  bewertung_ambiente: Number;
+  bewertung_geschmack: Number | undefined;
+  bewertung_preis: Number | undefined;
+  bewertung_ambiente: Number | undefined;
   kommentar: String;
 }

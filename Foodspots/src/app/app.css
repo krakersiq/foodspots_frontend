@@ -90,6 +90,7 @@ button:hover {
   background-color: #a92227;
   box-shadow: 0 0 20px #a92227;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 button:active {

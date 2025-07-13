@@ -16,9 +16,9 @@ export class Formular {
     name: '',
     stadt: '',
     kueche: '',
-    bewertung_geschmack: 0,
-    bewertung_preis: 0,
-    bewertung_ambiente: 0,
+    bewertung_geschmack: undefined,
+    bewertung_preis: undefined,
+    bewertung_ambiente: undefined,
     kommentar: ''
   };
 

@@ -24,9 +24,14 @@ export class Formular {
 
   constructor(private router: Router, private backend: Backend) {}
 
+formData ={
+  name: '',
+  kueche: ''
+}
+
   onSubmit() {
     this.backend.create(this.foodspot).then(() => {
-      console.log('Neuer Foodspot wurde hinzugefügt');
+      console.log('Neuer Foodspot wurde hinzugefügt', this.formData);
       this.router.navigate(['/uebersicht']);
     });
   }

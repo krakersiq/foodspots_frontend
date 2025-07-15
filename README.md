@@ -1,4 +1,4 @@
-*Semesteraufgabe Webanwendung*
+***Semesteraufgabe Webanwendung***
 Foodspots – Die besten Foodspots der Welt
 
 Diese Webanwendung dient zur Verwaltung von Foodspots - deine liebsten kulinarischen Entdeckungen auf einen Blick.
@@ -10,29 +10,25 @@ Aufbau nach Navigationsbar:
 Home - Startseite
 Alle Foodspots - Übersicht aller beriets gespiecherten Foodspots in einer Tabelle
 Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
-
-Login - (optional) Registrierung
+Login - Registrierung
 
 
 Funktionen:
-- Foodspot hinzufügen, bearbeiten und löschen
-- Foodspots verwalten, filtern
-- Lieblinge markieren???
-- Filtern nach Bewertung???
++ Foodspot hinzufügen
++ Foodspot auslesen
++ Foodspot bearbeiten
++ Foodspot löschen
+/////////+ Registrieren
+/////////+ Einloggen
 
+Verwendete KI-Werkzeuge:
+    # Chat GBT - Fehlermeldungen
+    # Copilot VSC - korrigiert
+    # ChatKI HTW - README
+    
 Farbpalette:
 #FCEEDD - Hintergrundfarbe
 #fa9740, #c4363d - Header, Footer
 
-
-
-Verwendete KI-Werkzeuge:
-    # Frontend: Fehlermeldungen fixen
-    # Backend: 
-    # Chat GBT 
-    # Copilot VSC
-
-
    Favicon: https://favicon.io/emoji-favicons/fork-and-knife/
    
-![alt text](image.png)

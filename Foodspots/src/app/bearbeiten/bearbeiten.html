@@ -1,0 +1,30 @@
+<h3 class="form-headline">Foodspot bearbeiten</h3>
+
+@if(foodspot) {
+<legend class="mb-4">Eintrag von {{ foodspot.name }} aktualisieren?</legend>
+} @else {
+<legend class="mb-4">Eintrag aktualisieren</legend>
+}
+
+<div class="form-container">
+    <form [formGroup]="form" (ngSubmit)="update()">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input type="text" id="stadt" name="stadt" placeholder="Stadt" required />
+            <input type="text" id="kueche" name="kueche" placeholder="Küche" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="geschmack" name="geschmack" placeholder="Geschmack" required />
+            <input type="text" id="preis" name="preis" placeholder="Preis" required />
+            <input type="text" id="ambiente" name="ambiente" placeholder="Ambiente" required />
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="kommentar" name="kommentar" placeholder="Kommentar" required />
+        </div>
+
+        <button type="button" (click)="update()">Aktualisieren</button>
+        <button type="button" (click)="cancel()">Abbrechen</button>
+    </form>
+</div>

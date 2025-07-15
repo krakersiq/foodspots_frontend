@@ -4,5 +4,4 @@ import { App } from './app/app';
 import { Formular } from './app/formular/formular';
 import { Registrierung } from './app/registrierung/registrierung';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(App, appConfig).catch((err) => console.error(err));

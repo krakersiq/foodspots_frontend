@@ -1,23 +1,22 @@
 <header class="app-header">
-  <div class="header-container">
-    <h1>{{ title }}</h1>
-    <nav class="nav-links">
-      <a routerLink="/">Home</a>
-      <a routerLink="/uebersicht">Alle Foodspots</a>
-      <a routerLink="/formular">Foodspots hinzufügen</a>
-      <a routerLink="/registrierung">Login</a>
-    </nav>
+  <div class="container-fluid py-2 d-flex justify-content-between align-items-center">
+    <div class="row justify-content-between align-items-center flex-column flex-md-row w-100">
+      <div class="col-md-4 text-center text-md-start">
+        <span class="mb-2 mb-md-0 fs-1 fs-md-4 text-light">{{ title }}</span>
+      </div>
+      <div class="col-md-8 d-flex justify-content-center justify-content-md-end flex-wrap gap-3 nav-links">
+        <a routerLink="/" class="nav-link">Home</a>
+        <a routerLink="/uebersicht" class="nav-link">Übersicht</a>
+        <a routerLink="/formular" class="nav-link">Foodspot hinzufügen</a>
+      </div>
+    </div>
   </div>
 </header>
 
-<section>
-
-<main class="main">
-  <router-outlet></router-outlet>
+<section class="w-responsive">
+  <main class="main" >
+    <router-outlet></router-outlet>
   </main>
+</section>
 
-  </section>
-  
-     <footer>
-    &copy; 2025 Antonia Rybaczyk
-  </footer>
+<footer>&copy; 2025 Antonia Rybaczyk</footer>

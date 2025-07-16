@@ -1,24 +1,63 @@
 <h3 class="form-headline">Füge einen neuen Foodspot hinzu!</h3>
 
 <div class="form-container">
-  <form (ngSubmit)="onSubmit()">
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <input type="text" id="name" name="name" [(ngModel)]="foodspot.name" placeholder="Name" required #name="ngModel">
-      <div *ngIf="name.invalid && name.touched" style="color: crimson;">Bitte gib einen Namen ein</div>
-      <input type="text" id="stadt" name="stadt" [(ngModel)]="foodspot.stadt" placeholder="Stadt" required>
-      <input type="text" id="kueche" name="kueche" [(ngModel)]="foodspot.kueche" placeholder="Küche" required>
+      <div class="flex-fill">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="foodspot.name" required #nameField="ngModel"/>
+        <div *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)" class="text-danger">
+          <small *ngIf="nameField.errors?.['required']">Name ist erforderlich.</small>
+        </div>
+      </div>
+      
+      <div class="flex-fill">
+        <label for="stadt">Stadt</label>
+        <input type="text" id="stadt" name="stadt" [(ngModel)]="foodspot.stadt" required #stadtField="ngModel"/>
+        <div *ngIf="stadtField.invalid && (stadtField.dirty || stadtField.touched)" class="text-danger">
+          <small *ngIf="stadtField.errors?.['required']">Stadt ist erforderlich.</small>
+        </div>
+      </div>
+
+      <div class="flex-fill">
+        <label for="kueche">Küche</label>
+        <input type="text" id="kueche" name="kueche" [(ngModel)]="foodspot.kueche" required #kuecheField="ngModel"/>
+        <div *ngIf="kuecheField.invalid && (kuecheField.dirty || kuecheField.touched)" class="text-danger">
+          <small *ngIf="kuecheField.errors?.['required']">Küche ist erforderlich.</small>
+        </div>
+      </div>
     </div>
 
     <div class="form-group">
-      <input type="text" id="geschmack" name="geschmack" [(ngModel)]="foodspot.bewertung_geschmack" placeholder="Geschmack" required>
-      <input type="text" id="preis" name="preis" [(ngModel)]="foodspot.bewertung_preis" placeholder="Preis" required>
-      <input type="text" id="ambiente" name="ambiente" [(ngModel)]="foodspot.bewertung_ambiente" placeholder="Ambiente" required>
+      <div class="flex-fill">
+        <label for="geschmack">Geschmack</label>
+        <input type="text" id="geschmack" name="geschmack" [(ngModel)]="foodspot.bewertung_geschmack" placeholder="0-10" required #geschmackField="ngModel"/>
+        <div *ngIf="geschmackField.invalid && (geschmackField.dirty || geschmackField.touched)" class="text-danger">
+          <small *ngIf="geschmackField.errors?.['required']">Geschmack ist erforderlich.</small>
+        </div>
+      </div>
+
+      <div class="flex-fill">
+        <label for="preis">Preis</label>
+        <input type="text" id="preis" name="preis" [(ngModel)]="foodspot.bewertung_preis" placeholder="0-10" required #preisField="ngModel"/>
+        <div *ngIf="preisField.invalid && (preisField.dirty || preisField.touched)" class="text-danger">
+          <small *ngIf="preisField.errors?.['required']">Preis ist erforderlich.</small>
+        </div>
+      </div>
+
+      <div class="flex-fill">
+        <label for="ambiente">Ambiente</label>
+        <input type="text" id="ambiente" name="ambiente" [(ngModel)]="foodspot.bewertung_ambiente" placeholder="0-10" required #ambienteField="ngModel"/>
+        <div *ngIf="ambienteField.invalid && (ambienteField.dirty || ambienteField.touched)" class="text-danger">
+          <small *ngIf="ambienteField.errors?.['required']">Ambiente ist erforderlich.</small>
+        </div>
+      </div>
     </div>
 
     <div class="form-group">
-      <input type="text" id="kommentar" name="kommentar" [(ngModel)]="foodspot.kommentar" placeholder="Kommentar" required>
+      <input type="text" id="kommentar" name="kommentar" [(ngModel)]="foodspot.kommentar" placeholder="Kommentar">
     </div>
 
-    <button type="submit" [disabled]="dataForm.invalid">zur Tabelle hinzufügen</button>
+    <button type="submit" class="add-button" [disabled]="form.invalid">zur Tabelle hinzufügen</button>
   </form>
 </div>

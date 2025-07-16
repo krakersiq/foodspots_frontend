@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import { Foodspot } from '../shared/foodspot';
 import { Backend } from '../shared/backend';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-formular',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './formular.html',
   styleUrl: './formular.css',
 })
@@ -24,10 +25,10 @@ export class Formular {
 
   constructor(private router: Router, private backend: Backend) {}
 
-formData ={
-  name: '',
-  kueche: ''
-}
+  formData = {
+    name: '',
+    kueche: '',
+  };
 
   onSubmit() {
     this.backend.create(this.foodspot).then(() => {

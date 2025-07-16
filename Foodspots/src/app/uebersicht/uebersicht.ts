@@ -1,18 +1,26 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Foodspot } from '../shared/foodspot';
 import { Backend } from '../shared/backend';
+import { RouterLink, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-uebersicht',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './uebersicht.html',
-  styleUrl: './uebersicht.css',
+  styleUrls: ['./uebersicht.css'],
 })
+
 export class Uebersicht implements OnInit {
+
   private bs = inject(Backend);
   foodspots: Foodspot[] = [];
   foodspot!: Foodspot;
   showDeleteModal: boolean = false;
+  showEditModal: boolean = false;
+  
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.bs
@@ -21,6 +29,33 @@ export class Uebersicht implements OnInit {
       .then((foodspots) =>
         console.log(' foodspots in TableComponent : ', foodspots)
       );
+  }
+  
+  berechneDurchschnitt(foodspot: Foodspot): number {
+    const geschmack = Number (foodspot.bewertung_geschmack) || 0;
+    const preis = Number (foodspot.bewertung_preis) || 0;
+    const ambiente = Number (foodspot.bewertung_ambiente) || 0;
+
+    const durchschnitt = (geschmack + preis + ambiente) / 3;
+    return Math.round(durchschnitt * 10) / 10;
+  }
+
+  onClickBearbeiten(foodspot: Foodspot) {
+    this.router.navigate(['/bearbeiten', foodspot._id]);
+  }
+
+  cancelEdit() {
+    this.showEditModal = false;
+  }
+
+  editFoodspot(foodspot: Foodspot) {
+    this.bs.getOne(String(foodspot))
+    .then(
+      response => {
+        this.foodspot = response;
+        this.showEditModal = true;
+      }
+    )
   }
 
   onClickDelete(foodspot: Foodspot) {
@@ -46,4 +81,7 @@ export class Uebersicht implements OnInit {
       this.showDeleteModal = false;
     });
   }
+
+  
+
 }

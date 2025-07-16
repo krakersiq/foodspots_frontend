@@ -16,18 +16,22 @@ export class Bearbeiten implements OnInit {
 
   private bs = inject(Backend);
   private router = inject(Router);
-  private route = inject(ActivatedRoute);
+  
   foodspot!: Foodspot;
   id: string | null = '';
   form = new FormGroup({
-    nameControl: new FormControl<string>(''),
-    stadtControl: new FormControl<string>(''),
-    kuecheControl: new FormControl<string>(''),
-    bewertung_geschmackControl: new FormControl<number | undefined>(undefined),
-    bewertung_preisControl: new FormControl<number | undefined>(undefined),
-    bewertung_ambienteControl: new FormControl<number | undefined>(undefined),
-    kommentarControl: new FormControl<string>('')
+    name: new FormControl<string>(''),
+    stadt: new FormControl<string>(''),
+    kueche: new FormControl<string>(''),
+    bewertung_geschmack: new FormControl<number | undefined>(undefined),
+    bewertung_preis: new FormControl<number | undefined>(undefined),
+    bewertung_ambiente: new FormControl<number | undefined>(undefined),
+    kommentar: new FormControl<string>('')
   });
+
+  constructor(private route: ActivatedRoute) {
+
+  }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
@@ -37,13 +41,13 @@ export class Bearbeiten implements OnInit {
       .then( response => {
         this.foodspot = response;
         this.form.patchValue({
-          nameControl: this.foodspot?.name,
-          stadtControl: this.foodspot?.stadt,
-          kuecheControl: this.foodspot?.kueche,
-          bewertung_geschmackControl: this.foodspot?.bewertung_geschmack,
-          bewertung_preisControl: this.foodspot?.bewertung_preis,
-          bewertung_ambienteControl: this.foodspot?.bewertung_ambiente,
-          kommentarControl: this.foodspot?.kommentar,
+          name: this.foodspot?.name,
+          stadt: this.foodspot?.stadt,
+          kueche: this.foodspot?.kueche,
+          bewertung_geschmack: this.foodspot?.bewertung_geschmack,
+          bewertung_preis: this.foodspot?.bewertung_preis,
+          bewertung_ambiente: this.foodspot?.bewertung_ambiente,
+          kommentar: this.foodspot?.kommentar,
         })
         return this.foodspot;
       })
@@ -52,19 +56,17 @@ export class Bearbeiten implements OnInit {
 
   update(): void {
     const values = this.form.value;
-    this.foodspot.name = values.nameControl!;
-    this.foodspot.stadt = values.stadtControl!;
-    this.foodspot.kueche = values.kuecheControl!;
-    this.foodspot.bewertung_geschmack = values.bewertung_geschmackControl!;
-    this.foodspot.bewertung_preis = values.bewertung_preisControl!;
-    this.foodspot.bewertung_ambiente = values.bewertung_ambienteControl!;
-    this.foodspot.kommentar = values.kommentarControl!;
+    this.foodspot.name = values.name!;
+    this.foodspot.stadt = values.stadt!;
+    this.foodspot.kueche = values.kueche!;
+    this.foodspot.bewertung_geschmack = values.bewertung_geschmack!;
+    this.foodspot.bewertung_preis = values.bewertung_preis!;
+    this.foodspot.bewertung_ambiente = values.bewertung_ambiente!;
+    this.foodspot.kommentar = values.kommentar!;
 
     this.bs.update(this.id!, this.foodspot)
-    .then( 
-      () => console.log('Foodspot wurde aktualisiert', this.foodspot))
-    .then(
-      () => this.router.navigate(['/uebersicht']))
+    .then( () => this.router.navigate(['/uebersicht']))
+    console.log('Form values:', values);
     }
 
 

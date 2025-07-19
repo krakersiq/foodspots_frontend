@@ -8,27 +8,19 @@ Die Anwendung besteht aus einem Angular-Frontend, einem Node.js-Backend und verw
 
 Aufbau nach Navigationsbar:
 Home - Startseite
-Alle Foodspots - Übersicht aller beriets gespiecherten Foodspots in einer Tabelle
+Übersicht - Übersicht aller bereits gespeicherten Foodspots in einer Tabelle
 Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
-Login - Registrierung
-
 
 Funktionen:
 + Foodspot hinzufügen
 + Foodspot auslesen
 + Foodspot bearbeiten
 + Foodspot löschen
-/////////+ Registrieren
-/////////+ Einloggen
 
 Verwendete KI-Werkzeuge:
-    # Chat GBT - Fehlermeldungen
-    # Copilot VSC - korrigiert
-    # ChatKI HTW - README
-    
-Farbpalette:
-#FCEEDD - Hintergrundfarbe
-#fa9740, #c4363d - Header, Footer
+    # Chat GBT -> Fehlermeldungen
+    # Copilot VSC -> Korrierierung
+    # ChatKI HTW -> README
 
    Favicon: https://favicon.io/emoji-favicons/fork-and-knife/
    

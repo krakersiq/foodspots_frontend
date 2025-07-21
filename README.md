@@ -20,11 +20,11 @@ __⚡ Aufbau nach Navigationsbar:__
 
 
 __Funktionen:__
-+ Foodspot hinzufügen
-+ Foodspot auslesen
-+ Foodspot bearbeiten
++ ➕ Foodspot hinzufügen
++ 🔎 Foodspot auslesen
++ ✏️ Foodspot bearbeiten
 ![alt text](image-3.png)
-+ Foodspot löschen
++ 🗑️ Foodspot löschen
 ![alt text](image-4.png)
 
 

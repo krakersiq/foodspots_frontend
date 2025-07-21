@@ -36,7 +36,7 @@ _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
 - 🗑️ Foodspot löschen  
 <img src="screenshots/loeschen.png" alt="Löschen-Screenshot" width="90%"/>
 
-### __🔄 Installation__
+# __🔄 Installation__
 
 ## ☝🏻 Voraussetzungen
 

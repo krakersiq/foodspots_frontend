@@ -46,21 +46,26 @@ Folgende Tools sollten bereits instaliert sein:
 + MongoDB (Compass oder Atlas)
 
 ## 🔗 Repository klonen
-Frontend: https://github.com/krakersiq/foodspots_frontend.git
-Backend: https://github.com/krakersiq/foodspots_backend.git
+- Frontend: https://github.com/krakersiq/foodspots_frontend.git
+- Backend: https://github.com/krakersiq/foodspots_backend.git
 
 ## 💻 Frontend Einrichtung
-Frontend starten mit 
-```ng serve```
-
+```
+cd foodspots_frontend
+npm install
+ng serve
+```
 
 ## 🔙🔚 Backend Einrichtung
-Backend starten mit 
-```node --watch server.js ```
+```
+cd foodspots_backend
+npm install
+node --watch server.js
+´´´
 
-## __🤖 Verwendete KI-Werkzeuge:__
+## 🤖 Verwendete KI-Werkzeuge
 + Chat GBT -> Fehlermeldungen
-+ Copilot VSC -> Korrierierung
++ Copilot VSC -> Korrigierung
 + ChatKI HTW -> README
 
 ## 👩🏻‍💻 Autorin

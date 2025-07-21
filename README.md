@@ -18,7 +18,7 @@ __⚡ Aufbau nach Navigationsbar:__
 + ➕ Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
 ![alt text](image-2.png)
 
-
+```
 __Funktionen:__
 + ➕ Foodspot hinzufügen
 + 🔎 Foodspot auslesen

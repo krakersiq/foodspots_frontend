@@ -1,7 +1,7 @@
 ## Semesteraufgabe Webanwendung
 # 🍴 Foodspots – Die besten Foodspots der Welt
 
-## __Allgemeine Infos__
+## __✨ Allgemeine Infos ✨__
 Diese Webanwendung dient zur __Verwaltung von Foodspots__ - deine liebsten kulinarischen Entdeckungen auf einen Blick.
 Es lassen sich neue Foodspots hinzufügen, bestehende bearbeitet oder löschen. 
 Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stets übersichtlich und aktuell.
@@ -23,7 +23,7 @@ Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ 
 <img src="screenshots/hinzufuegen.png" alt="Hinzufügen-Screenshot" width="90%"/> 
 
 
-## __Funktionen__
+## __🔧 Funktionen__
 + ➕ Foodspot hinzufügen  
 
 + 🔎 Foodspot auslesen  
@@ -34,7 +34,7 @@ Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ 
 + 🗑️ Foodspot löschen  
 <img src="screenshots/loeschen.png" alt="Löschen-Screenshot" width="90%"/>
 
-## __Instalation__
+## __🔄 Installation__
 
 __Voraussetzungen__
 
@@ -43,15 +43,15 @@ Folgende Tools sollten bereits instaliert sein:
 + Node.js (für Backend)
 + MongoDB (Compass oder Atlas)
 
-# Repository klonen
-Frontend: https://github.com/krakersiq/foodspots_frontend.git
-Backend: https://github.com/krakersiq/foodspots_backend.git
+## Repository klonen
+- Frontend: https://github.com/krakersiq/foodspots_frontend.git
+- Backend: https://github.com/krakersiq/foodspots_backend.git
 
-# 💻 Frontend Einrichtung
+## 💻 Frontend Einrichtung
 Frontend starten mit ```ng serve```
 
 
-# 🔙🔚 Backend Einrichtung
+## 🔙🔚 Backend Einrichtung
 Backend starten mit ```node --watch server.js ```
 
 

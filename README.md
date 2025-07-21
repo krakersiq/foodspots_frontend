@@ -11,12 +11,13 @@ Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ 
 
 __⚡ Aufbau nach Navigationsbar:__
 + 🏠 Home - Startseite  
-![alt text](image-1.png)
+<img src="image-1.png" alt="Bearbeiten" width="90%"/>
 + 🔎 Übersicht - Übersicht aller bereits gespeicherten Foodspots in einer Tabelle  
-![alt text](image.png)
-+ ✏️ Bearbeiten - Ausgewählten Foodspot bearbeiten ![alt text](image-3.png)  
+<img src="image.png" alt="Bearbeiten" width="90%"/>
++ ✏️ Bearbeiten - Ausgewählten Foodspot bearbeiten 
+<img src="image-3.png" alt="Bearbeiten" width="90%"/> 
 + ➕ Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
-![alt text](image-2.png)  
+<img src="image-2.png" alt="Bearbeiten" width="90%"/> 
 
 
 __Funktionen:__

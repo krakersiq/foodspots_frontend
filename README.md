@@ -1,4 +1,4 @@
-## Semesteraufgabe Webanwendung
+## Semesteraufgabe Webtechnologien 2025 - Webanwendung
 # 🍴 Foodspots – Die besten Foodspots der Welt 🍴
 
 ## __✨ Allgemeine Infos__
@@ -58,8 +58,10 @@ Frontend starten mit
 Backend starten mit 
 ```node --watch server.js ```
 
-
 ## __🤖 Verwendete KI-Werkzeuge:__
 + Chat GBT -> Fehlermeldungen
 + Copilot VSC -> Korrierierung
 + ChatKI HTW -> README
+
+### 👩🏻‍💻 Autorin
+- Antonia Rybaczyk

@@ -2,11 +2,11 @@
 # 🍴 Foodspots – Die besten Foodspots der Welt 🍴
 
 ## __✨ Allgemeine Infos__
-Diese Webanwendung dient zur __Verwaltung von Foodspots__ - deine liebsten kulinarischen Entdeckungen auf einen Blick.
+Diese Webanwendung dient zur **Verwaltung von Foodspots** - deine liebsten kulinarischen Entdeckungen auf einen Blick.
 Es lassen sich neue Foodspots hinzufügen, bestehende bearbeitet oder löschen. 
 Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stets übersichtlich und aktuell.
 
-Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ und verwendet eine __MongoDB-Datenbank__ zur Speicherung der Daten.
+Die Anwendung besteht aus einem **Angular-Frontend**, einem **Node.js-Backend** und verwendet eine **MongoDB-Datenbank** zur Speicherung der Daten.
 
 _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
    
@@ -27,9 +27,7 @@ _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
 
 ## __🔧 Funktionen__
 - ➕ Foodspot hinzufügen  
-
 - 🔎 Foodspot auslesen  
-
 - ✏️ Foodspot bearbeiten  
 <img src="screenshots/bearbeiten.png" alt="Bearbeiten-Screenshot" width="90%"/>
 
@@ -46,8 +44,10 @@ Folgende Tools sollten bereits instaliert sein:
 + MongoDB (Compass oder Atlas)
 
 ## 🔗 Repository klonen
-- Frontend: https://github.com/krakersiq/foodspots_frontend.git
-- Backend: https://github.com/krakersiq/foodspots_backend.git
+# Frontend
+git clone https://github.com/krakersiq/foodspots_frontend.git
+# Backend
+git clone https://github.com/krakersiq/foodspots_backend.git
 
 ## 💻 Frontend Einrichtung
 ```
@@ -64,9 +64,9 @@ node --watch server.js
 ```
 
 ## 🤖 Verwendete KI-Werkzeuge
-+ Chat GBT -> Fehlermeldungen
-+ Copilot VSC -> Korrigierung
-+ ChatKI HTW -> README
++ Chat GBT -> Unterstützung bei Fehlermeldungen
++ Copilot VSC -> Korrigierung, teilweise auch Code vervollständigt
++ ChatKI HTW -> Unterstützung bei README
 
 ## 👩🏻‍💻 Autorin
 Antonia Rybaczyk

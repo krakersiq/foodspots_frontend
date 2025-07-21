@@ -9,12 +9,12 @@ Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stet
 Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ und verwendet eine __MongoDB-Datenbank__ zur Speicherung der Daten.
 
 
-__Aufbau nach Navigationsbar:__
-+ Home - Startseite
+__⚡ Aufbau nach Navigationsbar:__
+🏠 Home - Startseite
 ![alt text](image-1.png)
 + Übersicht - Übersicht aller bereits gespeicherten Foodspots in einer Tabelle
 ![alt text](image.png)
-- Bearbeiten - Ausgewählten Foodspot bearbeiten ![alt text](image-3.png)
+✏️ Bearbeiten - Ausgewählten Foodspot bearbeiten ![alt text](image-3.png)
 + Foodspots hinzufügen - Formular zum einfügen eines neuen Foodspots (Name, Stadt, Küche, Geschmack, Preis, Ambiente, Kommentar)
 ![alt text](image-2.png)
 

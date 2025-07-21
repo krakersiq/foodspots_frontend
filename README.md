@@ -1,5 +1,5 @@
 ## Semesteraufgabe Webanwendung
-# Foodspots – Die besten Foodspots der Welt
+# 🍴 Foodspots – Die besten Foodspots der Welt
 
 __Allgemeine Infos:__
 Diese Webanwendung dient zur __Verwaltung von Foodspots__ - deine liebsten kulinarischen Entdeckungen auf einen Blick.

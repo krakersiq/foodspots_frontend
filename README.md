@@ -28,7 +28,7 @@ _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
 ## __🔧 Funktionen__
 - ➕ Foodspot hinzufügen  
 - 🔎 Foodspot auslesen  
-- ✏️ Foodspot bearbeiten  
+- ✏️ Foodspot bearbeiten/aktualisieren
 <img src="screenshots/bearbeiten.png" alt="Bearbeiten-Screenshot" width="90%"/>
 
 - 🗑️ Foodspot löschen  
@@ -38,16 +38,16 @@ _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
 
 ## ☝🏻 Voraussetzungen
 
-Folgende Tools sollten bereits instaliert sein:
+Folgende Tools sollten bereits installiert sein:
 + Angular (für Frontend)
 + Node.js (für Backend)
 + MongoDB (Compass oder Atlas)
 
 ## 🔗 Repository klonen
-# Frontend
-git clone https://github.com/krakersiq/foodspots_frontend.git
-# Backend
-git clone https://github.com/krakersiq/foodspots_backend.git
+- Frontend
+```git clone https://github.com/krakersiq/foodspots_frontend.git ```
+- Backend
+```git clone https://github.com/krakersiq/foodspots_backend.git ```
 
 ## 💻 Frontend Einrichtung
 ```

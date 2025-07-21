@@ -54,14 +54,14 @@ Folgende Tools sollten bereits instaliert sein:
 cd foodspots_frontend
 npm install
 ng serve
-´´´
+```
 
 ## 🔙🔚 Backend Einrichtung
 ```
 cd foodspots_backend
 npm install
 node --watch server.js
-´´´
+```
 
 ## 🤖 Verwendete KI-Werkzeuge
 + Chat GBT -> Fehlermeldungen

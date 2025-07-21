@@ -23,7 +23,9 @@ __Funktionen:__
 + Foodspot hinzufügen
 + Foodspot auslesen
 + Foodspot bearbeiten
+![alt text](image-3.png)
 + Foodspot löschen
+![alt text](image-4.png)
 
 
 __Verwendete KI-Werkzeuge:__

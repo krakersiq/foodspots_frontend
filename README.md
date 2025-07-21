@@ -23,7 +23,7 @@ __Funktionen:__
 + ➕ Foodspot hinzufügen  
 + 🔎 Foodspot auslesen  
 + ✏️ Foodspot bearbeiten  
-<img src="image-3.png" alt="Bearbeiten" width="80%"/>
+<img src="image-3.png" alt="Bearbeiten" width="90%"/>
 + 🗑️ Foodspot löschen  
 ![alt text](image-4.png)
 

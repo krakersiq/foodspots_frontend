@@ -54,7 +54,7 @@ Folgende Tools sollten bereits instaliert sein:
 cd foodspots_frontend
 npm install
 ng serve
-```
+´´´
 
 ## 🔙🔚 Backend Einrichtung
 ```

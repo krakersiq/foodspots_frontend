@@ -63,5 +63,5 @@ Backend starten mit
 + Copilot VSC -> Korrierierung
 + ChatKI HTW -> README
 
-### 👩🏻‍💻 Autorin
-***Antonia Rybaczyk***
+## 👩🏻‍💻 Autorin
+Antonia Rybaczyk

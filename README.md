@@ -1,7 +1,7 @@
-***Semesteraufgabe Webanwendung***
-Foodspots – Die besten Foodspots der Welt
+# Semesteraufgabe Webanwendung
+## Foodspots – Die besten Foodspots der Welt
 
-Diese Webanwendung dient zur Verwaltung von Foodspots - deine liebsten kulinarischen Entdeckungen auf einen Blick.
+Diese Webanwendung dient zur __Verwaltung von Foodspots__ - deine liebsten kulinarischen Entdeckungen auf einen Blick.
 Es lassen sich neue Foodspots hinzufügen, bestehende bearbeitet oder löschen. 
 Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stets übersichtlich und aktuell.
 Die Anwendung besteht aus einem Angular-Frontend, einem Node.js-Backend und verwendet eine MongoDB-Datenbank zur Speicherung der Daten.

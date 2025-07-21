@@ -44,9 +44,9 @@ Folgende Tools sollten bereits installiert sein:
 + MongoDB (Compass oder Atlas)
 
 ## 🔗 Repository klonen
-- Frontend
++ Frontend
 ```git clone https://github.com/krakersiq/foodspots_frontend.git ```
-- Backend
++ Backend
 ```git clone https://github.com/krakersiq/foodspots_backend.git ```
 
 ## 💻 Frontend Einrichtung
@@ -64,7 +64,7 @@ node --watch server.js
 ```
 
 ## 🤖 Verwendete KI-Werkzeuge
-+ Chat GBT -> Unterstützung bei Fehlermeldungen
++ Chat GPT -> Unterstützung bei Fehlermeldungen
 + Copilot VSC -> Korrigierung, teilweise auch Code vervollständigt
 + ChatKI HTW -> Unterstützung bei README
 

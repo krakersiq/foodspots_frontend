@@ -38,7 +38,7 @@ _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
 
 ## __🔄 Installation__
 
-**☝🏻 Voraussetzungen**
+## ☝🏻 Voraussetzungen##
 
 Folgende Tools sollten bereits instaliert sein:
 + Angular (für Frontend)
@@ -46,8 +46,8 @@ Folgende Tools sollten bereits instaliert sein:
 + MongoDB (Compass oder Atlas)
 
 ## 🔗 Repository klonen
-- Frontend: https://github.com/krakersiq/foodspots_frontend.git
-- Backend: https://github.com/krakersiq/foodspots_backend.git
+Frontend: https://github.com/krakersiq/foodspots_frontend.git
+Backend: https://github.com/krakersiq/foodspots_backend.git
 
 ## 💻 Frontend Einrichtung
 Frontend starten mit 

@@ -5,7 +5,7 @@ Diese Webanwendung dient zur __Verwaltung von Foodspots__ - deine liebsten kulin
 Es lassen sich neue Foodspots hinzufügen, bestehende bearbeitet oder löschen. 
 Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stets übersichtlich und aktuell.
 
-Die Anwendung besteht aus einem Angular-Frontend, einem Node.js-Backend und verwendet eine MongoDB-Datenbank zur Speicherung der Daten.
+Die Anwendung besteht aus einem __Angular-Frontend__, einem __Node.js-Backend__ und verwendet eine __MongoDB-Datenbank__ zur Speicherung der Daten.
 
 
 __Aufbau nach Navigationsbar:__

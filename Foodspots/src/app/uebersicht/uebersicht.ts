@@ -44,20 +44,6 @@ export class Uebersicht implements OnInit {
     this.router.navigate(['/bearbeiten', foodspot._id]);
   }
 
-  cancelEdit() {
-    this.showEditModal = false;
-  }
-
-  editFoodspot(foodspot: Foodspot) {
-    this.bs.getOne(String(foodspot))
-    .then(
-      response => {
-        this.foodspot = response;
-        this.showEditModal = true;
-      }
-    )
-  }
-
   onClickDelete(foodspot: Foodspot) {
     this.bs.getOne(String(foodspot._id))
     .then(
@@ -81,7 +67,4 @@ export class Uebersicht implements OnInit {
       this.showDeleteModal = false;
     });
   }
-
-  
-
 }

@@ -64,4 +64,4 @@ Backend starten mit
 + ChatKI HTW -> README
 
 ### 👩🏻‍💻 Autorin
-- Antonia Rybaczyk
+***Antonia Rybaczyk***

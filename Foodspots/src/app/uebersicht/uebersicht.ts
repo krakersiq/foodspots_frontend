@@ -27,7 +27,7 @@ export class Uebersicht implements OnInit {
       .getAll()
       .then((response) => (this.foodspots = response))
       .then((foodspots) =>
-        console.log(' foodspots in TableComponent : ', foodspots)
+        console.log('Diese Foodspots befinden sich in der Tabelle: ', foodspots)
       );
   }
   
@@ -57,7 +57,7 @@ export class Uebersicht implements OnInit {
   cancelDelete() {
     this.showDeleteModal = false;
   }
- 
+
   deleteFoodspot() {
     const id = this.foodspot._id;
     console.log('Lösche Foodspot mit ID: ', id);

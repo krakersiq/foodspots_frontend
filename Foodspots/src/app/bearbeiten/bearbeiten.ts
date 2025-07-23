@@ -33,7 +33,7 @@ export class Bearbeiten implements OnInit {
 
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.id = this.route.snapshot.paramMap.get('id');
     console.log('ID:', this.id);
     this.bs
@@ -51,7 +51,7 @@ export class Bearbeiten implements OnInit {
         })
         return this.foodspot;
       })
-      .then((foodspot) => console.log('Foodspot in Bearbeiten:', foodspot));
+      .then((foodspot) => console.log('Foodspot wird aktuell bearbeitet:', foodspot));
   }
 
   update(): void {
@@ -66,9 +66,8 @@ export class Bearbeiten implements OnInit {
 
     this.bs.update(this.id!, this.foodspot)
     .then( () => this.router.navigate(['/uebersicht']))
-    console.log('Form values:', values);
+    console.log('Foodspot wurde aktualisiert:', values);
     }
-
 
   cancel(): void {
     this.router.navigate(['/uebersicht']);

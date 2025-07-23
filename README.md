@@ -68,5 +68,12 @@ node --watch server.js
 + Copilot VSC -> Korrigierung, teilweise auch Code vervollständigt
 + ChatKI HTW -> Unterstützung bei README
 
+## 🚀 künftige Erweiterungen
++ Registrierung
++ Login
++ Suchfunktion und Filter - nach Stadt, Küche, Bewertung und Preis
++ Foodspots als Favoriten markieren
++ Tags hinzufügen
+
 ## 👩🏻‍💻 Autorin
 Antonia Rybaczyk

@@ -28,6 +28,11 @@ export class Formular {
   formData = {
     name: '',
     kueche: '',
+    stadt: '',
+    bewertung_geschmack: undefined,
+    bewertung_preis: undefined,
+    bewertung_ambiente: undefined,
+    kommentar: '',
   };
 
   onSubmit() {

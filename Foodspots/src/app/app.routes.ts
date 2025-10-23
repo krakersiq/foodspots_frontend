@@ -8,5 +8,7 @@ export const routes: Routes = [
   { path: '', component: Startseite },
   { path: 'uebersicht', component: Uebersicht },
   { path: 'formular', component: Formular },
-  { path: 'bearbeiten/:id', component: Bearbeiten },
+  { path: 'bearbeiten/:id', component: Bearbeiten }, //:id Platzhalter für die eigentliche ID des Foodspots
 ];
+
+//Hier werden Routen definiert unter welcher URL die jeweiligen Komponenten erreichbar sind.

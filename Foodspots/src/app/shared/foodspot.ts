@@ -5,6 +5,6 @@ export interface Foodspot {
   kueche: string;
   bewertung_geschmack: number | undefined;
   bewertung_preis: number | undefined;
-  bewertung_ambiente: number | undefined;
+  bewertung_ambiente: number | undefined; //number soll erst im Formular definiert werden, deswegen undefined
   kommentar: string;
 }

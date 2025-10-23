@@ -10,11 +10,11 @@ export class Backend {
 
   constructor() {}
 
-  async getAll(): Promise<Foodspot[]> {
-    let response = await fetch(this.apiURL + '/foodspots');
-    let foodspots = await response.json();
+  async getAll(): Promise<Foodspot[]> { //lädt alle Foodspots vom Backend
+    let response = await fetch(this.apiURL + '/foodspots'); //GET-Anfrage an das Backend
+    let foodspots = await response.json(); //Antwort aus backend wird von json in js umgewandelt - json ist text und wir brauchen js Objekte und Arrays
     console.log('Alle Foodspots wurden erfolgreich aus dem Backend geladen: (getAll) : ', foodspots);
-    return foodspots;
+    return foodspots; //gibt Foodspots als Arrays zurück
   }
 
   async getOne(id: string): Promise<Foodspot> {
@@ -50,12 +50,12 @@ export class Backend {
     return updatedFoodspot;
   }
 
-  async deleteOne(id: string): Promise<{ message: string }> {
-    let response = await fetch(this.apiURL + '/foodspots/' + id, {
+  async deleteOne(id: string): Promise<{ message: string }> { // Löscht einen Foodspot anhand der ID
+    let response = await fetch(this.apiURL + '/foodspots/' + id, {  //delete Anfrage an das Backend
       method: 'DELETE',
     });
-    let message = await response.json();
+    let message = await response.json(); //Antwort aus backend wird von json in js umgewandelt
     console.log('Antwort vom Backend (deleteOne): ', message);
-    return message;
+    return message; // Rückgabe Message vom Backend
   }
 }

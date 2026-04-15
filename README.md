@@ -6,6 +6,13 @@ Diese Webanwendung dient zur **Verwaltung von Foodspots** - deine liebsten kulin
 Es lassen sich neue Foodspots hinzufügen, bestehende bearbeitet oder löschen. 
 Auf diese Weise bleibt die persönliche Sammlung gastronomischer Highlights stets übersichtlich und aktuell.
 
+### 🚀 Live-Demo
+Das Frontend der Anwendung ist auf Vercel deployed und unter folgendem Link erreichbar:
+👉 **[Foodspots Live-Anwendung](https://foodspots-fr.vercel.app)** 
+
+> **⚠️ Hinweis zum Backend:** Da das Backend aktuell noch lokal läuft, zeigt die Live-Demo im Browser leere Listen oder Fehlermeldungen bei Datenbank-Aktionen. 
+Um die volle Funktionalität zu testen, muss das Backend lokal gemäß der untenstehenden Anleitung gestartet werden.
+
 Die Anwendung besteht aus einem **Angular-Frontend**, einem **Node.js-Backend** und verwendet eine **MongoDB-Datenbank** zur Speicherung der Daten.
 
 _Favicon: https://favicon.io/emoji-favicons/fork-and-knife/_
